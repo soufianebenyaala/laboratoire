@@ -1,0 +1,31 @@
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <mat-form-field appearance="fill" class="field" >
+        <mat-label>Enter your cin</mat-label>
+        <input matInput placeholder="cin" required formControlName="cin">
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <mat-form-field appearance="fill" class="field" >
+        <mat-label>Enter your name</mat-label>
+        <input matInput placeholder="name" required formControlName="name">
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <mat-form-field appearance="fill" class="field" >
+        <mat-label>Enter your type</mat-label>
+        <input matInput placeholder="type" required formControlName="type">
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <mat-form-field appearance="fill" class="field" >
+        <mat-label>Enter your cv</mat-label>
+        <input matInput placeholder="cv" required formControlName="cv">
+      </mat-form-field>
+    </div>
+
+    <button mat-raised-button color="primary" >Primary</button>
+  </form>
+
+

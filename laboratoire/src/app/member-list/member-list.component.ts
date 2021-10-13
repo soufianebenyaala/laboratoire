@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, Validators } from '@angular/forms';
 import { member } from 'src/models/member.model';
 import { MemberService } from 'src/services/member.service';
 
@@ -9,7 +10,9 @@ import { MemberService } from 'src/services/member.service';
 })
 
 export class MemberListComponent implements OnInit {
+
   datasource: member[] = [];
+
   ngOnInit(): void {
     this.fetchDataSource();
   }
@@ -26,4 +29,7 @@ export class MemberListComponent implements OnInit {
     'actions',
   ];
   constructor(private memberService: MemberService) {}
+
+
+
 }
